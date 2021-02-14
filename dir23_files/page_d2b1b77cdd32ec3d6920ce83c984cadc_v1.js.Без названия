@@ -1,0 +1,5 @@
+
+; /* Start:"a:4:{s:4:"full";s:58:"/local/templates/demis_edges/js/about.min.js?1611574390860";s:6:"source";s:44:"/local/templates/demis_edges/js/about.min.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
+webpackJsonp([37],{176:function(a,s,n){"use strict";(function(a){function s(){var s=a(".slider__about__services");window.matchMedia("(max-width: 760px)").matches?s.owlCarousel({loop:!0,navText:['<span class="icon-arrow_left_medium"></span>','<span class="icon-arrow_right_medium"></span>'],responsive:{0:{items:1,nav:!0,navText:['<span class="icon-arrow_left_medium"></span>','<span class="icon-arrow_right_medium"></span>']},640:{items:2,nav:!0,navText:['<span class="icon-arrow_left_medium"></span>','<span class="icon-arrow_right_medium"></span>']},1256:{items:3,nav:!0,navText:['<span class="icon-arrow_left_big"></span>','<span class="icon-arrow_right_big"></span>']}}}):(s.trigger("destroy.owl.carousel").removeClass("owl-carousel owl-loaded"),s.find(".owl-stage-outer").children().unwrap())}s(),a(window).resize(function(){s()})}).call(s,n(1))}},[176]);
+/* End */
+;; /* /local/templates/demis_edges/js/about.min.js?1611574390860*/
