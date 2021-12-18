@@ -22,7 +22,23 @@
                   <meta name="robots" content="noyaca">
 
     
-    
+    <link rel="shortcut icon" href="img/Icon-130x130.png" />
+	<link rel="apple-touch-icon" href="img/Icon-130x130.png" />
+
+    <meta property="og:image" content="http://pacman.platzh1rsch.ch/img/Icon-130x130.png"/>
+
+	<!-- AppsFuel verification code -->
+	<meta name="appsfuel_code" content="83d3cedc1050a5c"/>
+	
+	<!-- Mobile Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	
+	<!-- Apple Mobile Web Capability -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<!-- Script -->
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery.hammer.min.js" type="text/javascript"></script>
 
 
 <link rel="canonical" href="https://www.demis.ru/actions/mesyats-prodvizheniya-v-podarok/">
@@ -46,7 +62,7 @@
 
 		
 		
-    <meta name="description" content="Команда ОВО поздравляет всех в Demis с наступающим 2021">
+    <meta name="description" content="Команда ОВО поздравляет всех в Demis с наступающим 2022">
     <meta name="keywords" content="акции">
     	
 	<!--[if lt IE 9]>
@@ -437,7 +453,7 @@
 					<div class="container">
 						<div class="inner">
 							<div class="breadcrumbs"><ul class="bread__ul"><li class="bread__li"><a href="https://www.demis.ru/" class="bread__link"></a></li><li class="bread__li"><a href="https://www.demis.ru/actions/" class="bread__link"></a></li><li class="bread__li"><span class="bread__link"></span></li></ul></div>							<div class="page__title">
-								<h1 class="h1">Как и в уходящем году, собирай<img src="assets/strel.png" > лишь все хорошее <img src="assets/star.png" > из того, что преподнес тебе 2020 несмотря ни на что, будь то недовольные клиенты<img src="assets/bomb2.png" >, кризис<img src="assets/bomb.png"> или коронавирус<img src="assets/bomb1.png">. Всего 3 препятствия и 4 уровня, с которыми тебе справиться под силу!</h1>
+								<h1 class="h1">Команда ОВО поздавляет всех коллег с наступающим Новым годом!  Дорогой Demisчанин, предлагаем сделать паузу в работе и принять наши поздравляния! Вспомни детство и  собирай<img src="assets/strel.png" > лишь все самое вкусное, не попадаясь на неприятельские уловки! Играйся пока не надоест и прокручивая страницу вниз принимай почти бесконечный поток наших пожеланий и поздравлений!/h1>
 							<h2 class="date__bp">	Страничка может некорректно работать при выключенном в браузере JavaScript, Sorry</h2>
 							</div>
 																					                            
@@ -447,9 +463,115 @@
     <span class="date__bp">Срок актуальности поздравления: только до 31 декабря 2021</span>
 </div>
 																	</div>
-					ппппп
+					
 				</div>
-						ппппппп
+				<!-- main game content -->
+					<center>
+<div class="content" id="game-content">
+
+		<!-- Google AdSense -->
+		<div id="adsense">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:320px;height:50px"
+			     data-ad-client="ca-pub-0176206735745791"
+			     data-ad-slot="6492298622"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	
+	
+	<!-- main game content -->
+	<div class="game wrapper">
+	
+		<div class="score">Score:</div>
+		<div class="level">Lvl:</div>
+		<div class="lives">Lives: </div>
+		
+		<div class="controlSound">
+			<img src="img/audio-icon-mute.png" id="mute">
+		</div>
+		<!-- canvas is splitted into 18x13 fields -->
+		<div id="canvas-container">
+			<div id="canvas-overlay-container">
+				<div id="canvas-overlay-content">
+					<div id="title">Pacman Canvas</div>
+					<div><p id="text">Click to Play</p></div>
+				</div>
+			</div>
+			<canvas id="myCanvas" width="540" height="390">
+			<p>Canvas not supported</p>
+			</canvas>
+		</div>
+
+		<div class="controls" id="game-buttons">
+		<!-- Will be moved to Instructions 
+		<p class="nomobile">Use W-A-S-D keys to navigate Pac-Man</p>
+		-->
+		
+			<!-- OLD Buttons -->
+			<div>
+				<span id="up" class="controlButton">&uarr;</span>
+			</div>
+			<div>
+				<span id="left" class="controlButton">&larr;</span>
+				<span id="down" class="controlButton">&darr;</span>
+				<span id="right" class="controlButton">&rarr;</span>
+			</div>
+			
+		</div>
+		<!-- inGame Controls End -->
+		
+		<!-- Game Menu -->		
+		<div class="controls" id="menu-buttons">
+			<ul>
+				<li class="button" id="newGame">New Game</li>
+				<li class="button" id="highscore">Highscore</li>
+				<li class="button" id="instructions">Instructions</li>
+				<li class="button" id="info">Info</li>
+			</ul>
+			
+		</div>
+		<!-- Game Menu End -->
+		
+	</div>
+		
+	<div class="description nomobile">
+		<p>This whole thing was written in HTML5, CSS3 and Javascript (using small bits of jquery). For the basics I was following the <a href="http://devhammer.net/blog/exploring-html5-canvas-part-1---introduction" target="_blank">"Exploring HTML5 Canvas"</a> Tutorials (Part 1 - 6) by Devhammer. Thanks for the great Tutorial!</a>
+		<p>For some other stuff, like how to write objectorientated javascript I was following the tutorials over at <a href="http://www.codecademy.com/" target="_blank">http://www.codecademy.com/</a>, which is a really great site to learn Javascript and also other languages.</a>
+		<p>If you understand German you can also read my blogpost about this site: <a href="http://blog.platzh1rsch.ch/2012/08/pacman-in-html5-canvas.html">"Pacman in HTML5 Canvas"</a>.</p>
+		
+		<span id="audio">
+			<audio id="theme" preload="auto">
+				<source src="wav/theme.wav" type="audio/wav">
+				<source src="mp3/theme.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="waka" preload="auto">
+				<source src="wav/waka.wav" type="audio/wav">
+				<source src="mp3/waka.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="die" preload="auto">
+				<source src="wav/die.wav" type="audio/wav">
+				<source src="mp3/die.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="powerpill" preload="auto">
+				<source src="wav/powerpill.wav" type="audio/wav">
+				<source src="mp3/powerpill.mp3" type="audio/mpeg">
+			</audio>
+		</span>
+		
+		
+	</div>
+
+</div>
+</div>
+</div>
+
+	<script src="pacman-canvas.js" type="text/javascript"></script>
+	  </center>
+	  <!-- main game content -->
+	  
 			</div>		
 		
 <div class="about__page__wrapper">
