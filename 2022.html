@@ -502,7 +502,32 @@
 		</div>
 	
 	
-	<!-- main game content -->
+	
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg">
+  <filter id="inset" x="-50%" y="-50%" width="200%" height="200%">
+    <feflood flood-color="black" result="outside-color"></feflood>
+    <femorphology in="SourceAlpha" operator="dilate" radius="3.5"></femorphology>
+    <fecomposite in="outside-color" operator="in" result="outside-stroke"></fecomposite>
+    <feflood flood-color="#0c9fc4" result="inside-color"></feflood>
+    <fecomposite in2="SourceAlpha" operator="in" result="inside-stroke"></fecomposite>
+    <femerge>
+      <femergenode in="outside-stroke"></femergenode>
+      <femergenode in="inside-stroke"></femergenode>
+    </femerge>
+  </filter>
+</svg>
+					    
+					</div>
+					<div class="bg__overlay__opacity"></div>
+				</div>
+				<div class="outer">
+					<div class="container">
+						<div class="inner">
+							<div class="breadcrumbs"></div>							<div class="page__title">
+							    <!-- main game content -->
 	<div class="game wrapper">
 	
 		<div class="score">Score:</div>
@@ -590,31 +615,6 @@
 
 	<script src="pacman-canvas.js" type="text/javascript"></script>
 						<!-- main game content -->
-
-
-
-<svg xmlns="http://www.w3.org/2000/svg">
-  <filter id="inset" x="-50%" y="-50%" width="200%" height="200%">
-    <feflood flood-color="black" result="outside-color"></feflood>
-    <femorphology in="SourceAlpha" operator="dilate" radius="3.5"></femorphology>
-    <fecomposite in="outside-color" operator="in" result="outside-stroke"></fecomposite>
-    <feflood flood-color="#0c9fc4" result="inside-color"></feflood>
-    <fecomposite in2="SourceAlpha" operator="in" result="inside-stroke"></fecomposite>
-    <femerge>
-      <femergenode in="outside-stroke"></femergenode>
-      <femergenode in="inside-stroke"></femergenode>
-    </femerge>
-  </filter>
-</svg>
-					    
-					</div>
-					<div class="bg__overlay__opacity"></div>
-				</div>
-				<div class="outer">
-					<div class="container">
-						<div class="inner">
-							<div class="breadcrumbs"></div>							<div class="page__title">
-							    
 							    
 							    
 								
