@@ -1,43 +1,14 @@
 /* Google Web Fonts */
-@font-face {
-  font-family: 'Press Start 2P';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/PressStart2Play.eot');
-  src: url('fonts/PressStart2Play.eot?iefix') format('eot'),
-       url('fonts/PressStart2Play.woff') format('woff'),
-       url('fonts/PressStart2Play.ttf') format('truetype');
-}
 
-/* ---------------- */
-
-body {
-	background-color: #000;
-	color: white;
-	font-family: 'Press Start 2P', cursive;
-}
-
-
-/* Links */
-.main a, .main a:link, .main a:active, .main a:visited {
-    padding: 5px;
-	background: #c80a0a;
-    color: rgb(255, 255, 255);
-}
 * { box-shadow: none !important; }
 
-.content, h1, h2, h3, p, div { 
-	font-family: 'Press Start 2P', cursive; 
-	font-weight: normal;
-	}
+
 .content[id*=-content]:not(#game-content) {	
 	display: none; 
 	overflow-y: auto; 
 	overflow-x: hidden;
 }
-.content img {
-	max-width: 100%;
-}
+
 .pull-right {
 	float: right;
 }
